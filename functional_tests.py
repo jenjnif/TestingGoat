@@ -1,11 +1,11 @@
 from selenium import webdriver
+import unittest
 
 browser = webdriver.Firefox()
 
 # Adam Ondra has heard about a cool new climbing to-do app
 # He goes to check out the homepage
 browser.get('http://localhost:8000')
-assert 'Django' in browser.title
 
 # He notices the page title and header mention to-do lists
 assert 'To-Do' in browser.title
